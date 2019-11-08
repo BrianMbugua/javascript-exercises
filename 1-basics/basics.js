@@ -289,7 +289,7 @@ describe("basics", function() {
             // Can you find two different numbers that each cast to `false` in an if() statement?
             // ✏️ ADD CODE HERE ✏️
             const falsyNumber1 = 0
-            const falsyNumber2 = NaN
+            const falsyNumber2 = NaN;
             ////////////////////////////////////////////////////////////////////
 
             expect(typeof falsyNumber1).to.equal("number");
@@ -313,7 +313,7 @@ describe("basics", function() {
             ////////////////////////////////////////////////////////////////////
             // Can you find a value that is typeof "object" but also casts to `false`?
             // ✏️ ADD CODE HERE ✏️
-        
+            
             ////////////////////////////////////////////////////////////////////
 
             expect(typeof falsyThing).to.equal("object");
