@@ -140,7 +140,7 @@ describe("basics", function() {
             // ✏️ ADD CODE HERE ✏️
             const object = {
                 someProperty:1
-            }
+            };
             ////////////////////////////////////////////////////////////////////
 
             expect(object instanceof Object).to.equal(true);
@@ -156,7 +156,7 @@ describe("basics", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE ✏️
-
+            object.someProperty = undefined;
             ////////////////////////////////////////////////////////////////////
 
             // object.someProperty is undefined...
