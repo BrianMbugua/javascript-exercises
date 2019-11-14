@@ -344,6 +344,7 @@ describe("basics", function() {
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE ✏️
             propertyName = ['secondProperty'];
+            
             ////////////////////////////////////////////////////////////////////
 
             // That's the same property access as above, but now we get back
@@ -358,7 +359,9 @@ describe("basics", function() {
             // You can create objects that reference themselves.
             // But you need two steps to do it.
             // ✏️ ADD CODE HERE ✏️
-
+            var object = {};
+            object.object=object;
+        
             ////////////////////////////////////////////////////////////////////
 
             expect(object.object).to.equal(object);
