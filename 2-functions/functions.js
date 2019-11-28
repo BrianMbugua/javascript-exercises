@@ -685,7 +685,7 @@ describe("functions", function() {
                     return function() {
                         this.doSomething();
                         this.doAnotherThing();
-                    };
+                    }.bind(this);
                 },
                 doSomething: function() {},
                 doAnotherThing: function() {}
@@ -706,7 +706,7 @@ describe("functions", function() {
             function calculateSum() {
                 let result = 0;
 
-                arguments.forEach(function(number) {
+                arguments.from(arguments).forEach(function(number) {
                     result = result + number;
                 });
 
